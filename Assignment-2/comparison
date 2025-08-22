@@ -1,0 +1,9 @@
+Comparison between the Best-First Search and A* Algorithm:
+
+Best-First Search and A* are both informed search algorithms, but they differ in how they evaluate nodes during exploration. 
+Best-First Search is greedy in nature, as it selects the next node to expand based only on the heuristic value h(n), which 
+estimates the distance to the goal. This makes it faster in some cases but not guaranteed to find the optimal path, since it
+ignores the cost already incurred. On the other hand, A* uses the evaluation function f(n) = g(n) + h(n), where g(n) is the 
+actual cost from the start to the current node and h(n) is the estimated cost to the goal. This balance between actual cost and 
+heuristic ensures that A* is both complete and optimal, provided the heuristic is admissible. In summary, Best-First Search 
+prioritizes speed over accuracy, while A* ensures the shortest or best solution, though it may require more time and memory.
